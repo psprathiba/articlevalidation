@@ -1,0 +1,190 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10409697134,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Guardian news website",
+            "match": {
+              "location": "NewsValidationSteps.navigateToGuardianWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14866443841,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewsValidationSteps.setUpClass()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Confirm the news article from The Guardian is valid",
+        "description": "",
+        "id": "news-validation;confirm-the-news-article-from-the-guardian-is-valid",
+        "after": [
+          {
+            "result": {
+              "duration": 768627804,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewsValidationSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 51529713,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Read the first news article",
+            "match": {
+              "location": "NewsValidationSteps.readFirstNewsArticle()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2440961773,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Search for similar information on Google",
+            "match": {
+              "location": "NewsValidationSteps.searchSimilarInformationOnGoogle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3024849216,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate the news article\u0027s valid",
+            "match": {
+              "location": "NewsValidationSteps.validateNewsArticleValidity()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5892121444,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Guardian news website",
+            "match": {
+              "location": "NewsValidationSteps.navigateToGuardianWebsite()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 7343563798,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewsValidationSteps.setUpClass()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify with negative search data",
+        "description": "",
+        "id": "news-validation;verify-with-negative-search-data",
+        "after": [
+          {
+            "result": {
+              "duration": 1392209122,
+              "status": "passed"
+            },
+            "match": {
+              "location": "NewsValidationSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 150375862,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Reverse the article name",
+            "match": {
+              "location": "NewsValidationSteps.readFirstNewsArticleInReverse()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5049201390,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Search for similar information on Google",
+            "match": {
+              "location": "NewsValidationSteps.searchSimilarInformationOnGoogle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5025171894,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Validate invalid news article",
+            "match": {
+              "location": "NewsValidationSteps.validateNewsArticleIsInvalid()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "News Validation",
+    "description": "",
+    "id": "news-validation",
+    "keyword": "Feature",
+    "uri": "NewsValidation.feature"
+  }
+]
